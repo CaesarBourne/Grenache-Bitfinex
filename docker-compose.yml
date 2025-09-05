@@ -15,7 +15,7 @@ services:
     networks: ["mesh"]
     depends_on: ["grape1"]
 
-  mysql :configs:
+  mysql:
     image: mysql:8
     environment: 
       MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD

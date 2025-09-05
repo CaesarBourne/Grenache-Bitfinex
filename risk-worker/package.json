@@ -1,5 +1,5 @@
 {
-  "name": "marketdata-svc",
+  "name": "risk-worker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,9 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^17.2.2",
     "grenache-nodejs-http": "^1.0.1",
-    "grenache-nodejs-link": "^1.0.2",
-    "mongodb": "^6.19.0"
-  }
+    "grenache-nodejs-link": "^1.0.2"
+  },
+  "devDependencies": {}
 }

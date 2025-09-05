@@ -20,6 +20,18 @@ module.exports = ( {serviceName, port=1024, grape= 'http://grape1:30001'}, handl
     }, 1000)
 
     transport.on('request', (rid, key, payload, handler) => {
-
+        const fn  = handlers[key]
+        if(!fn){
+            return handler.reply(new Error(`Unknown Method ${key}`));
+        }
+        Promise.resolve(fn(payload))
+        .then((res) => handler.reply(null, res))
+        .catch((err) => {
+            logger.error({service: serviceName, err : err.message})
+            handler.reply(err)
+        })
     })
+
+    return {link, transport}
 }
+
