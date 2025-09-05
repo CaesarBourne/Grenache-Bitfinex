@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "grenache-nodejs-http": "^1.0.1",
+    "grenache-nodejs-link": "^1.0.2"
+  }
+}
