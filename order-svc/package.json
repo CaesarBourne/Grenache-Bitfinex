@@ -12,6 +12,7 @@
   "dependencies": {
     "grenache-nodejs-http": "^1.0.1",
     "grenache-nodejs-link": "^1.0.2",
+    "dotenv": "^17.2.2",
     "mysql2": "^3.14.4"
   }
 }

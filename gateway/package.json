@@ -12,6 +12,12 @@
   "license": "ISC",
   "dependencies": {
     "jsonwebtoken": "^9.0.2",
-    "ws": "^8.18.3"
+    "dotenv": "^17.2.2",
+    "ws": "^8.18.3",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "grenache-nodejs-http": "^1.0.11",
+    "grenache-nodejs-link": "^1.0.5",
+    "grenache-nodejs-pubsub": "^1.0.0"
   }
 }
